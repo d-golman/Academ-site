@@ -1,0 +1,216 @@
+#body
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &.color-passage
+        position: relative     
+        #header-section
+            margin-top: 70px
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            .image
+                max-width: 50%
+                width: 100%
+                min-width: 300px
+                margin-bottom: 30px
+                img
+                    width: 100%
+            .text
+                padding-right: 2%
+                padding-left: 30px
+                max-width: 50%
+                min-width: 300px
+                display: flex
+                flex-direction: column
+                align-items: flex-end
+                &>*
+                    margin-bottom: 30px
+                .title
+                    max-width: 115%
+                    margin-left: -80%
+                    text-align: right
+                    h1
+                        font-family: Coworking
+                        font-size: 50px
+                        text-transform: uppercase
+                    p
+                        text-align: right
+                        font-size: 35px
+                &>p
+                    font-size: 25px
+                    text-align: justify
+                    max-width: 850px       
+                        
+            @media screen and ( max-width: 1100px )
+                .image, .text
+                    max-width: 100%
+                .text
+                    .title
+                        margin-left: 0
+                        h1
+                            font-size: 30px
+        p,a
+            font-size: calc(100vw/65)
+        h3
+            font-size: calc(100vw/45)
+        .h3text
+            text-align: center
+            width: 70%
+            img
+                width: 30% !important
+            h3
+                margin: 20px 0
+        .text
+            height: 100%
+            width: 100% 
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            p
+                padding: 10px 40px
+                text-align: justify
+
+        .split2-1
+            display: flex
+            flex-direction: row
+            .left
+                width: 67%
+            .right
+                width: 33%
+            img
+                width: 100%
+        .split1-2
+            display: flex
+            flex-direction: row
+            .left
+                width: 33%
+            .right
+                width: 67%
+            img
+                width: 100%
+        .split1-1-1
+            display: flex
+            flex-direction: row
+            .left
+                width: 33%
+            .center
+                width: 34%
+            .right
+                width: 33%
+            img
+                width: 100%
+        #second-section
+            display: grid
+            grid-template-columns: repeat(3, minmax(200px, 33.3%))
+            grid-template-rows: repeat(6, minmax(50px, calc(100vw/7)))
+            .text
+
+                &.first
+                    grid-row-start: 1
+                    grid-row-end: 3
+                    grid-column-start: 1
+                    grid-column-end: 1
+                &.second
+                    background: $orange
+                    grid-row-start: 4
+                    grid-row-end: 6
+                    grid-column-start: 2
+                    grid-column-end: 2
+                &.third
+                    grid-row-start: 6
+                    grid-row-end: 6
+                    grid-column-start: 1
+                    grid-column-end: 3
+            img
+                width: 100%
+                height: 100%
+                &.first
+                    grid-row-start: 1
+                    grid-row-end: 4
+                    grid-column-start: 2
+                    grid-column-end: 4
+                &.second
+                    grid-row-start: 3
+                    grid-row-end: 6
+                    grid-column-start: 1
+                    grid-column-end: 1
+                &.third
+                    grid-row-start: 4
+                    grid-row-end: 7
+                    grid-column-start: 3
+                    grid-column-end: 3
+        .h3text
+            &.first
+                margin: 80px auto
+        #third-section
+            &>*:nth-child(1)
+                background: $orange
+                .left
+                    display: flex
+                    flex-direction: row
+                    align-items: flex-end
+                    &>*
+                        width: 50%
+                        height: auto
+        #fourth-section
+            .left
+                display: flex
+                flex-direction: column
+                justify-content: center
+            .right
+                display: flex
+                flex-direction: column
+                background: $orange
+                .h3text
+                    margin: 10% auto
+                    h3
+                        padding: 10% 0
+        #fifth-section
+            &>*:nth-child(2)
+                background: $orange
+            &>*:nth-child(3)
+                .left
+                    background: $orange
+                .right
+                    display: flex
+                    flex-direction: column
+            &>*:nth-child(4)
+                .left
+                    &>*:first-child
+                        display: flex
+                        flex-direction: row
+                        img
+                            width: 50%
+                            display: inline-block
+                    .h3text
+                        display: flex
+                        flex-direction: column
+                        justify-content: center
+                        align-items: center
+                        height: 50%
+                        width: 100%
+                        h3
+                            padding: 7% 10%
+        .split2-1
+            &.second
+                .left
+                    width: 65%
+                .right
+                    width: 35%
+                    display: flex
+                    flex-direction: column
+                    justify-content: flex-end
+                    align-items: center
+                    .text
+                        text-align: justify
+                        height: 60%
+                        background: $orange                        
+                        a,p         
+                            padding: 0                   
+                            padding-left: 5%                   
+                            width: 40% 
+                            text-decoration: none
+                            color: black
+                            text-align: justify

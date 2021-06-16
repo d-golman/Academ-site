@@ -1,0 +1,58 @@
+#body
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &.pond
+        background: url(../images/pondBG.png) 0px 0px no-repeat
+        background-size: 100%
+        position: relative
+        #first
+            margin-top: 80px
+            width: 100%
+            display: flex
+            flex-direction: row
+            justify-content: flex-end
+            .page-title
+                max-width: 1300px
+                text-align: right
+                h1
+                    font-family: Coworking
+                    font-size: 60px
+                    padding-right: 40px
+                    line-height: 80px
+                    @media screen and ( max-width: 1000px )
+                        font-size: 35px
+                p
+                    font-size: 30px
+                    font-weight: bold
+                    margin-top: 10px
+                    padding-right: 40px
+                img
+                    width: 80%
+                    margin-top: 50px
+        #second
+            margin: auto
+            margin-top: 150px
+            display: flex
+            width: 80%
+            flex-wrap: wrap
+            img
+                width: 100%
+                margin: auto
+            div
+                margin: 0 auto
+                min-height: 100%
+                display: flex
+                flex-direction: column
+                justify-content: flex-end
+                max-width: 900px
+                padding-top: 30px
+                text-align: justify
+                p
+                    font-size: 25px
+                    &.bold
+                        font-weight: 500
+        #third
+            margin: 150px 0
+            iframe
+                width:100%

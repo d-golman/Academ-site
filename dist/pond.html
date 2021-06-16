@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пруд с утками</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body id='body' class='pond'>
+    <header id="header">
+        <div class="title">
+            <p>Технопарк</p>
+        </div>
+        <div class="exit">
+            <a href="./?scroll=2">&times;</a>
+        </div>
+    </header>
+    <section id="first">
+        <div class="page-title">
+            <h1><span class='color-green'>ПРУД</span> С УТКАМИ И ИХ ДРУЗЬЯМИ. КАКОЙ ПТИЦЕЙ ТЫ БЫЛ(А) БЫ В <span
+                    class="color-orange">«УТИНОМ»</span> ОЗЕРЕ?</h1>
+            <p>Золотодолинская</p>
+            <img src="./images/pondImage.png" alt="">
+        </div>
+    </section>
+    <section id="second">
+        <div>
+            <img src="./images/pondGIF.gif" alt="">
+        </div>
+        <div>
+            <p>Изначально на месте пруда было болото, до тех пор, пока на нем не поселились кряквы. В 2011 научный
+                руководитель Института молекулярной и клеточной биологии СО РАН Игорь Жигулев разработал план
+                облагораживания пруда. Через три года вместо непроходимых зарослей появились дорожки, мостики, смотровые
+                площадки, декоративные камни и цветы. Так пруд стал местом отдыха и достопримечательностью
+                Академгородка.</p>
+            <p class="bold">Несмотря на название, в озере и окрестностях водятся не только утки. Если вы когда-нибудь
+                фантазировали стать птицей или просто любите пернатых, то можете пройти наш тест.
+            </p>
+        </div>
+    </section>
+    <section id="third">
+        <script>
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = 'https://embed.ex.co/sdk.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'exco-sdk'));
+        </script>
+        <div class="exco" data-id="ef43d159-7c73-4b31-84c4-bb35f6bbf12f" data-show-share="false" data-show-info="false">
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="footer-block">
+            <div class="links">
+                <p>ПОДЕЛИТЬСЯ ПРОЕКТОМ:</p>
+                <!-- window.location.href -->
+                <a href="#" onclick="
+            window.open(`https://vk.com/share.php?url=${window.location.href}`, '_blank');
+            ">
+                    <img src="./images/vkontakte.png" alt="">
+                </a>
+                <a href="#" onclick="
+            window.open(`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`, '_blank');
+            ">
+                    <img src="./images/facebook.png" alt="">
+                </a>
+
+                <a href="#" onclick="
+            window.open(`https://twitter.com/share?url=${window.location.href}`, '_blank');
+            ">
+                    <img src="./images/twitter.png" alt="">
+                </a>
+            </div>
+            <div class="footer-logo">
+                <img src="./images/textlogo.png" alt="">
+            </div>
+        </div>
+        <p class="copy">
+            Trails 2020
+        </p>
+    </footer>
+</body>
+
+</html>

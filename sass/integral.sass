@@ -1,0 +1,112 @@
+#body
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &.integral
+        background: url(../images/integralBG.png) 0px 100px no-repeat
+        background-size: 100%
+        position: relative            
+        #first
+            margin-top: 30px
+            width: 100%
+            display: flex
+            flex-direction: row
+            justify-content: flex-end
+            .page-title
+                max-width: 1400px
+                text-align: right
+                background-color: rgba(255,255,255,0.7)
+                border-radius: 15px
+                h1
+                    font-family: Coworking
+                    font-size: 60px
+                    padding-right: 40px
+                    line-height: 80px
+                    @media screen and ( max-width: 1000px )
+                        font-size: 35px
+                p
+                    font-weight: bold
+                    font-size: 30px
+                    margin-top: 10px
+                    padding-right: 40px
+                @media screen and ( max-width: 600px )
+                    h1
+                        font-size: 30px
+                        padding-right: 20px
+                        line-height: 40px
+                    p                    
+                        font-size: 20px
+                        margin-top: 10px
+                        padding-right: 20px
+                @media screen and ( max-width: 400px )
+                    h1
+                        font-size: 20px
+        .info
+            margin: 0 auto
+            max-width: 640px
+            padding: 10px
+            img
+                width: 100%
+            &.first
+                margin-top: 50%
+            &.second                
+                margin-top: 30%
+        .info2
+            margin-top: 28%
+            width: 100%
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            .left 
+                width: 50%
+                display: flex
+                align-items: center
+                justify-content: center
+                min-width: 300px
+                img
+                    margin: 0 auto
+                    max-width: 640px
+                    width: 100%
+            .right
+                min-width: 300px
+                width: 50%
+                height: 780px
+                display: flex
+                align-items: center
+                justify-content: center
+                &.first
+                    background: url(../images/integralTextBG.png) center center/cover no-repeat
+                    background-size: 100% 100%
+                    height: 780px !important
+
+                p
+                    height: 40%
+                    width: 60%
+                    font-size: 25px
+                    padding: 10px
+                    @media screen and ( max-width: 600px )
+                        font-size: 20px
+            @media screen and ( max-width: 1200px )
+                display: block
+                .left
+                    width: 100%
+                    height: auto
+                .right
+                    height: auto
+                    width: 100%
+                    max-width: 100%
+            &.second
+                margin: 0
+                p
+                    height: auto
+                    max-width: 750px
+                margin-bottom: 200px
+        .soundcloud
+            margin: 0 auto
+            margin-top: 400px
+            max-width: 800px 
+            width: 100%
+            iframe
+                width: 100%
+            @media screen and ( max-width: 600px )
+                margin-top: 10px

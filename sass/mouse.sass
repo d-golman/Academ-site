@@ -1,0 +1,63 @@
+#body
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &.mouse
+        background: url(../images/mouseBG.png) 0px 600px no-repeat
+        background-size: 100%
+        position: relative
+        .mouse-img
+            z-index: 0
+            position: absolute
+            right: 0
+            top: 7%
+        .mouse-title
+            margin-top: 50px
+            width: 75%
+            padding: 50px
+            h1
+                color: #333
+                font-size: 50px
+                font-family: Coworking
+                line-height: 60px
+            p
+            
+                font-weight: bold
+                margin-top: 20px
+                display: block
+                width: 100%
+                font-size: 20px
+        .mouse-gif
+            margin: 20% 0 0 4%
+            max-width: 700px
+            padding: 10px
+            border-radius: 10px 
+        .mouse-text
+            position: relative
+            height: 400px
+            p
+                padding: 10px
+                font-weight: bold
+                position: absolute
+                top: 15%
+                right: 13.5%
+                text-align: justify
+                font-size: 25px
+                max-width: 450px
+        iframe
+            margin: 200px auto
+            width: 80%
+        @media screen and ( max-width: 650px )
+            .mouse-title
+                width: 100%
+                h1
+                    font-size: 25px
+            .mouse-img
+                display: none
+            .mouse-gif
+                margin: 0
+            .mouse-text
+                p
+                    top: 0
+                    right: 0
+            background-position-y: center

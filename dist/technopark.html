@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Технопарк</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body id='body' class='technopark'>
+    <header id="header">
+        <div class="title">
+            <p>Технопарк</p>
+        </div>
+        <div class="exit">
+            <a href="./?scroll=10000">&times;</a>
+        </div>
+    </header>
+    <section id="first">
+        <img src="./images/technopark.png" alt="">
+        <div class="page-title">
+            <h1>БИЗНЕС - <span class="color-light-blue">ГУСИ</span>. КТО РАБОТАЕТ В <span
+                    class="color-orange">ТЕХНОПАРКЕ</span> НА НИКОЛАЕВА</h1>
+            <p>Николаева, 12</p>
+        </div>
+    </section>
+    <section id="second">
+        <div class="left">
+            <p>Игра-угадайка. Проявите смекалку и узнайте о передовых компаниях Академгородка!</p>
+            <p>То самое огромное здание с головокружительной конструкцией. Но Академпарк не ограничивается башней, на
+                самом деле это комплекс лабораторно-производственных зданий на площади в несколько городских кварталов.
+            </p>
+            <p>Основные направления его деятельности: наукоемкое оборудование, биотехнологии, новые материалы и
+                нанотехнологии. Качественная инфраструктура помогает развитию инновационного бизнеса, внедрению научных
+                разработок</p>
+            <br>
+            <p class="bold">Сыграйте в викторину: попробуйте угадать деятельность компании-резидента Академпарка по
+                названию и логотипу.</p>
+        </div>
+        <div class="right">
+            <img src="./images/technoparkGIF.gif" alt="">
+        </div>
+    </section>
+    <section class="third">
+        <script>
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = 'https://embed.ex.co/sdk.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'exco-sdk'));
+        </script>
+        <div class="exco" data-id="2e680f35-4e7b-4d0a-ac7c-e3bebf686c83" data-show-share="false" data-show-info="false">
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="footer-block">
+            <div class="links">
+                <p>ПОДЕЛИТЬСЯ ПРОЕКТОМ:</p>
+                <!-- window.location.href -->
+                <a href="#" onclick="
+            window.open(`https://vk.com/share.php?url=${window.location.href}`, '_blank');
+            ">
+                    <img src="./images/vkontakte.png" alt="">
+                </a>
+                <a href="#" onclick="
+            window.open(`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`, '_blank');
+            ">
+                    <img src="./images/facebook.png" alt="">
+                </a>
+
+                <a href="#" onclick="
+            window.open(`https://twitter.com/share?url=${window.location.href}`, '_blank');
+            ">
+                    <img src="./images/twitter.png" alt="">
+                </a>
+            </div>
+            <div class="footer-logo">
+                <img src="./images/textlogo.png" alt="">
+            </div>
+        </div>
+        <p class="copy">
+            Trails 2020
+        </p>
+    </footer>
+</body>
+
+</html>

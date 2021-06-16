@@ -1,0 +1,153 @@
+#body
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &.obskoe
+        position: relative
+        section
+            h3
+                padding: 15px 0
+                max-width: 600px
+                font-size: 25px
+            p
+                font-size: 25px
+                padding: 25px 0
+                max-width: 600px
+        #header-section
+            .obskoe-img
+                z-index: 0
+                position: absolute
+                right: 0
+                top: 2%
+            .obskoe-title
+                margin-top: 50px
+                width: 75%
+                padding: 50px
+                h1
+                    color: #333
+                    font-size: 50px
+                    font-family: Coworking
+                    line-height: 60px
+                p
+                
+                    font-weight: bold
+                    margin-top: 20px
+                    display: block
+                    width: 100%
+                    font-size: 20px
+            @media screen and ( max-width: 1000px )
+                .obskoe-title
+                    width: 100%
+                    h1
+                        font-size: 25px
+                .obskoe-img
+                    display: none
+        #second-section
+            color: white
+            background: url(../images/obskoeBG1.png) top center no-repeat
+            background-size: 100% 100%
+            padding: 200px 5% 450px 10%
+            margin-top: 16%
+            img
+                max-width: 600px
+                width: 100%
+            @media screen and ( max-width: 650px )
+                background-size: 200% 100%
+        #third-section
+            z-index: 6
+            display: grid
+            grid-template-columns: minmax(300px,40%) 60%
+            margin-top: -200px
+            div
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                text-align: left
+                h3
+                    display: block
+                    font-size: 30px
+                    width: 85%
+                    max-width: 85%
+                p
+                    font-size: 25px
+                    max-width: 85%
+                img
+                    width: 85%
+            @media screen and ( max-width: 1000px )
+                margin-top: -100px
+                grid-template-columns: 1fr
+        #fourth-section
+            z-index: 5
+            color: white
+            background: url(../images/obskoeBG2.png) top center no-repeat
+            background-size: 100% 100%
+            padding: 400px 5% 250px 10%
+            text-align: center
+            margin-top: -200px
+            h3
+                font-size: 35px
+                max-width: 100%
+                text-align: center
+                padding: 30px
+                width: 100%
+            .text
+                margin-top: 100px
+                p
+                    text-align: left
+                    max-width: 400px
+            @media screen and ( max-width: 650px )
+                background-size: 300% 100%
+                padding: 650px 5% 550px 10%
+
+        #fifth-section
+            display: grid
+            grid-template-columns: minmax(300px,40%) 60%
+            background: url(../images/obskoeBG3.png) top 100px center no-repeat
+            background-size: 100% 100%
+ 
+            .separate-image
+                grid-column-start: 1 
+                grid-column-end: 3 
+                margin-top: -100px 
+                width: 100%
+                padding: 0 5%
+            .left
+                height: 100%
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: flex-end
+                padding: 10%
+                padding-bottom: 20%
+            .right
+                padding: 10%              
+                p, h3
+                    max-width: 100%
+                    font-size: 25px
+                .second
+                    padding-top: 20%
+                    margin: 400px 0
+                    max-width: 100%
+                    text-align: center
+                    color: white
+                    h3
+                        max-width: 100%
+                        font-size: 40px
+                .third
+                    img
+                        width: 100%
+            @media screen and ( max-width: 1000px )
+                grid-template-columns: 1fr
+                background: white
+                .separate-image
+                    grid-column-start: 1 
+                    grid-column-end: 1
+                .right   
+                    .second
+                        padding-top: 0
+                        color: black
+                        margin: 50px 0
+                .left  
+                    padding-top: 0
+                    padding-bottom: 0
