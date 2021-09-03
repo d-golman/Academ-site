@@ -1,4 +1,4 @@
 Сайт презентация академгородка
 Сайт сверстан на заказ, выделяется интересной структурой
 
-<a href="http://f0536271.xsph.ru/" target="blank">Ссылка на сайт</a>
+<a href="https://trails-academ.netlify.app/" target="blank">Ссылка на сайт</a>
